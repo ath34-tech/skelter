@@ -37,9 +37,9 @@ In seconds, Skelter delivers a production-ready skeleton complete with a **PRD**
 ### Option 1: Standalone Binary (One-Click Download)
 The easiest way to use Skelter. No Python, Pip, or UV installation is needed.
 
-[![Download Skelter](https://img.shields.io/badge/Download-skelter.exe-blue?style=for-the-badge&logo=windows)](https://github.com/ath34-tech/skelter/releases/latest/download/skelter.exe)
+[![Download Skelter](https://img.shields.io/badge/Download-skelter.exe-blue?style=for-the-badge&logo=windows)](https://github.com/ath34-tech/skelter/releases/download/v1.0.0/skelter.exe)
 
-1. **[Download skelter.exe](https://github.com/ath34-tech/skelter/releases/latest/download/skelter.exe)**
+1. **[Download skelter.exe](https://github.com/ath34-tech/skelter/releases/download/v1.0.0/skelter.exe)**
 2. **Move** it to any folder on your computer.
 3. **(Optional) Add to PATH**: Move the file to a folder already in your system PATH (like `C:\Windows`) to use `skelter` from any terminal.
 
