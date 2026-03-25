@@ -1,0 +1,25 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+bin/
+lib/
+share/
+pyvenv.cfg
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Sensitive Info
+.env
+
+# Generated Projects
+generated/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
