@@ -1,4 +1,4 @@
-<p align="center">, 
+<p align="center">
   <img src="logo_2.png" alt="Skelter Logo" width="600">
 </p>
 
@@ -34,35 +34,27 @@ In seconds, Skelter delivers a production-ready skeleton complete with a **PRD**
 
 ## 🚀 Installation
 
-### Option 1: Standard Installation (Pure Python & Pip)
-No special tools required. Just standard Python and pip:
+### Option 1: Standalone Binary (One-Click Download)
+The easiest way to use Skelter. No Python, Pip, or UV installation is needed.
+
+[![Download Skelter](https://img.shields.io/badge/Download-skelter.exe-blue?style=for-the-badge&logo=windows)](https://github.com/ath34-tech/skelter/releases/latest/download/skelter.exe)
+
+1. **[Download skelter.exe](https://github.com/ath34-tech/skelter/releases/latest/download/skelter.exe)**
+2. **Move** it to any folder on your computer.
+3. **(Optional) Add to PATH**: Move the file to a folder already in your system PATH (like `C:\Windows`) to use `skelter` from any terminal.
+
+### Option 2: For Developers (Python & Pip)
+If you already have Python installed and want to run Skelter as a package:
 
 ```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Install Skelter as a command
+# Install directly from source
 pip install .
 ```
 
-### Option 2: Global Tool (For [uv](https://github.com/astral-sh/uv) users)
-If you prefer using `uv`:
-
+### Option 3: Modern Tooling (Using [uv](https://github.com/astral-sh/uv))
 ```bash
 uv tool install .
 ```
-
-### Option 3: Standalone Binary (Zero dependencies)
-If you want to use Skelter without even having Python or Pip installed, you can build a standalone executable:
-
-```bash
-# Install build dependencies
-pip install pyinstaller
-
-# Build the executable
-python build_exe.py
-```
-This will create a `skelter.exe` (Windows) or `skelter` (Linux/macOS) in the `dist/` folder. Move it anywhere and run it!
 
 ## 🎯 Quick Start
 
@@ -92,3 +84,12 @@ skelter init --stack "FastAPI + React" --name "trip-planner" --usecase "A travel
 <p align="center">
   Built with 🦴 by developers, for developers.
 </p>
+
+## 🛠️ For Maintainers
+
+### How to update the one-click download link
+To make the "One-Click Download" link work, you must:
+1.  **Create a Release**: Go to your GitHub repository → **Releases** → **Create a new release**.
+2.  **Tag it**: Give it a version tag (e.g., `v1.0.0`).
+3.  **Upload the Binary**: Drag and drop the `dist/skelter.exe` file into the "Attach binaries" area.
+4.  **Publish**: Once published, the "latest/download/skelter.exe" link in this README will automatically point to the newest version.
