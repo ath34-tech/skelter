@@ -1,5 +1,5 @@
 <p align="center">, 
-  <img src="logo.png" alt="Skelter Logo" width="600">
+  <img src="logo_2.png" alt="Skelter Logo" width="600">
 </p>
 
 <h1 align="center">🦴 Skelter</h1>
