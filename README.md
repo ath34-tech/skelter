@@ -34,16 +34,35 @@ In seconds, Skelter delivers a production-ready skeleton complete with a **PRD**
 
 ## 🚀 Installation
 
-The most professional way to install Skelter is as a global tool using [uv](https://github.com/astral-sh/uv):
+### Option 1: Standard Installation (Pure Python & Pip)
+No special tools required. Just standard Python and pip:
 
 ```bash
-# Clone the repo
-git clone https://github.com/your-username/skelter.git
-cd skelter
+# Install dependencies
+pip install -r requirements.txt
 
-# Install globally
+# Install Skelter as a command
+pip install .
+```
+
+### Option 2: Global Tool (For [uv](https://github.com/astral-sh/uv) users)
+If you prefer using `uv`:
+
+```bash
 uv tool install .
 ```
+
+### Option 3: Standalone Binary (Zero dependencies)
+If you want to use Skelter without even having Python or Pip installed, you can build a standalone executable:
+
+```bash
+# Install build dependencies
+pip install pyinstaller
+
+# Build the executable
+python build_exe.py
+```
+This will create a `skelter.exe` (Windows) or `skelter` (Linux/macOS) in the `dist/` folder. Move it anywhere and run it!
 
 ## 🎯 Quick Start
 
