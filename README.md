@@ -1,5 +1,5 @@
-<p align="center">
-  <img src="https://file.trae.ai/67e2310114972f0932c02450/1742880155013/d46d7904-7a0e-4361-b4f3-c5f7823e2003.png" alt="Skelter Logo" width="600">
+<p align="center">, 
+  <img src="logo.png" alt="Skelter Logo" width="600">
 </p>
 
 <h1 align="center">🦴 Skelter</h1>
