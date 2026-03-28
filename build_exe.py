@@ -12,6 +12,10 @@ def build():
         "--onefile",
         "--name=skelter",
         "--clean",
+        # Use logo as icon (Windows handles PNG conversion in newer PyInstaller)
+        "--icon=logo_2.png",
+        # Bundle the logo as a data file
+        "--add-data=logo_2.png;.",
         # Include the skelter package
         "--collect-all=skelter",
         # Explicitly include dependencies that might be missed

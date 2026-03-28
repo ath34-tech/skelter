@@ -83,3 +83,36 @@ The HLD should include:
 
 Return ONLY the markdown content.
 """
+
+REFINE_PROMPT = """
+You are a senior software architect helping a developer refine their project structure.
+
+Current project structure:
+Tech Stack: {stack}
+Usecase: {usecase}
+
+Current folders:
+{folders}
+
+Current files:
+{files}
+
+The developer wants to make the following change:
+"{instruction}"
+
+Your task:
+Apply the requested change to the structure. You may add, remove, or rename folders and files.
+Keep the overall architecture consistent and professional.
+Do NOT include any explanations — only return the updated structure as valid JSON.
+
+IMPORTANT:
+- All file and folder paths must be relative to project root (no leading slashes).
+- Preserve paths that are unaffected by the change.
+- Return ONLY valid JSON. No markdown, no commentary.
+
+Output format must be EXACTLY:
+{{
+  "folders": ["folder/path", "folder/path"],
+  "files": ["file/path.ext", "file/path.ext"]
+}}
+"""

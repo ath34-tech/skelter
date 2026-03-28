@@ -1,4 +1,4 @@
-from skelter.server.agent.prompts import ARCH_PROMPT, WALKTHROUGH_PROMPT, PRD_PROMPT, HLD_PROMPT
+from skelter.server.agent.prompts import ARCH_PROMPT, WALKTHROUGH_PROMPT, PRD_PROMPT, HLD_PROMPT, REFINE_PROMPT
 from skelter.server.core.client import invoke_client
 
 def plan_architecture(stack: str, usecase: str):
@@ -20,5 +20,18 @@ def generate_hld(stack: str, usecase: str, folders: list, files: list):
     prompts = HLD_PROMPT.format(stack=stack, usecase=usecase, folders=folders, files=files)
     response = invoke_client(prompts)
     return response
+
+def refine_structure(stack: str, usecase: str, folders: list, files: list, instruction: str):
+    """Ask the LLM to apply a natural-language edit to the current folder/file structure."""
+    prompts = REFINE_PROMPT.format(
+        stack=stack,
+        usecase=usecase,
+        folders=folders,
+        files=files,
+        instruction=instruction,
+    )
+    response = invoke_client(prompts)
+    return response
+
 
 
